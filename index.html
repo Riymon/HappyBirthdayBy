@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cake">
+        <div class="candle">
+            <div class="flame" id="flame"></div>
+            <div class="num" id="num"> <h1>21</h1></div>
+        </div>
+        <div class="layers">
+            <div class="layer top"></div>
+            <div class="layer middle"></div>
+            <div class="layer bottom"></div>
+        </div>
+        <div class="toppings">
+            <div class="strawberry"></div>
+            <div class="strawberry"></div>
+            <div class="strawberry"></div>
+            <div class="cream"></div>
+            <div class="cream"></div>
+            <div class="cream"></div>
+        </div>
+        <audio id="background-music" preload="auto">
+            <source src="PALAGI.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <button id="blowCandleBtn" onclick="blowCandle()">Blow the Candle</button>
+    <button id="showLetterBtn" class="hidden" onclick="showLetter()">Read Birthday Letter</button>
+    <div id="message" class="hidden">Happy 21st Birthday My Pretty By!</div>
+    <div id="letter" class="hidden card">
+        <div id = "pic" class ="slides"> 
+            <div class="slide"><img src="image1.jpg" alt="Image 1" style="width: 100%; height: 80%;" id="one"></div>
+            <div class="slide"><img src="image2.jpg" alt="Image 2" style="width: 100%; height: 80%;"id="one"></div>
+        </div>
+        <hr>
+        <h3>Hi By,</h3>
+        <p>
+            Today, you celebrate your birthday, youre wonderful person you`re the joy you bring into my life.
+            <br><br>Its your 21`st birthday ante najud ka by hahaha jwk
+            On your special day, I wish you all the happiness, love, and success in the world. 
+            May your year ahead be filled with laughter, adventure, and dreams come true and more birthdays celebration with you 
+            always keep in mind that I always love you .
+        </p>
+        <p>
+            Happy 21st Birthday! and Happy Valentines Day!🎉🎂
+        </p>
+        <p id ="sender">
+            Your by, handsome boyfriend,<br>
+            R.A :) 
+           
+        </p>
+        <hr>
+    </div>
+    <canvas id="confettiCanvas" class="hidden"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
